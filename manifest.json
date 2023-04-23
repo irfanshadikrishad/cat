@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Cat",
+  "description": "Changes everything in the Leading University, Sylhet. homepage",
+  "version": "1.0",
+  "icons": {
+    "16": "./images/icon16.png",
+    "32": "./images/icon32.png",
+    "48": "./images/icon48.png",
+    "128": "./images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.lus.ac.bd/*"],
+      "js": ["/scripts/yt.js"],
+      "css": ["/css/yt.css"]
+    }
+  ],
+  "action": {
+    "default_title": "Cat (Click to Enable/Disable)",
+    "default_icon": "./images/icon128.png"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
