@@ -11,7 +11,7 @@ body {
   height: 90vh;
 }
 .container {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 .cat__logo {
@@ -37,5 +37,13 @@ body {
   color: #ffad8a;
 }
 .cat__copy {
-  margin-top: 55vh;
+  margin-top: 28vh;
+}
+.cat__hl > a {
+  color: #ffad8a;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 70%;
+  }
 }
