@@ -96,6 +96,7 @@ function Cat() {
       i.src = "https://i.ibb.co/ZN6pbn4/icon128.png";
     }
   });
+  //
   // main result
   document.querySelectorAll(".col-sm-3.ng-binding")[0].innerHTML =
     "<strong>CGPA :</strong> 3.69";
@@ -103,3 +104,11 @@ function Cat() {
     "<strong>Grade :</strong> A";
 }
 setInterval(Cat, 500);
+function setFavicons(favImg) {
+  let headTitle = document.querySelector("head");
+  let setFavicon = document.createElement("link");
+  setFavicon.setAttribute("rel", "shortcut icon");
+  setFavicon.setAttribute("href", favImg);
+  headTitle.appendChild(setFavicon);
+}
+setFavicons("https://i.ibb.co/ZN6pbn4/icon128.png");
