@@ -33,6 +33,17 @@
 .footer-sidebar {
   background-color: #303030 !important;
 }
+#wp-submit {
+  color: #008572 !important;
+  background-color: #252525 !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: whitesmoke !important;
+  -webkit-box-shadow: 0 0 0 30px #303030 inset !important;
+}
 aside#spotlight_widget-3,
 aside#text-6,
 aside#text-9,

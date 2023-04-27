@@ -4,36 +4,47 @@ function Cat() {
     document.querySelectorAll("td.ng-binding.ng-scope")
   ).map((element) => {
     if (element.innerHTML == "F") {
-      element.innerHTML = "A+";
-    } else if (
-      element.innerHTML == "B" ||
-      element.innerHTML == "B+" ||
-      element.innerHTML == "B-" ||
-      element.innerHTML == "C" ||
-      element.innerHTML == "C-" ||
-      element.innerHTML == "D"
-    ) {
-      element.innerHTML = "A";
-    } else if (element.innerHTML == "C+") {
+      element.innerHTML = "B+";
+    } else if (element.innerHTML == "D") {
+      element.innerHTML = "B";
+    } else if (element.innerHTML == "C") {
       element.innerHTML = "A-";
+    } else if (element.innerHTML == "C+") {
+      element.innerHTML = "A";
+    } else if (element.innerHTML == "B-") {
+      element.innerHTML = "A+";
     } else if (element.innerHTML == "0.0") {
+      element.innerHTML = "3.25";
+    } else if (element.innerHTML == "2.0") {
       element.innerHTML = "3.0";
+    } else if (element.innerHTML == "2.25") {
+      element.innerHTML = "3.5";
+    } else if (element.innerHTML == "2.5") {
+      element.innerHTML = "3.75";
+    } else if (element.innerHTML == "2.75") {
+      element.innerHTML = "4.0";
     }
   });
   console.log("https://irfanshadikrishad.github.io");
   const final = Array.from(document.querySelectorAll("th.ng-binding")).map(
     (fin) => {
       if (
-        fin.innerHTML == "A-" ||
-        fin.innerHTML == "B+" ||
-        fin.innerHTML == "B" ||
-        fin.innerHTML == "B-" ||
-        fin.innerHTML == "C+" ||
-        fin.innerHTML == "C" ||
+        fin.innerHTML == "F" ||
         fin.innerHTML == "D" ||
-        fin.innerHTML == "F"
+        fin.innerHTML == "C" ||
+        fin.innerHTML == "C+"
+      ) {
+        fin.innerHTML = "A-";
+      } else if (
+        fin.innerHTML == "B-" ||
+        fin.innerHTML == "B" ||
+        fin.innerHTML == "B+"
       ) {
         fin.innerHTML = "A";
+      } else if (Number(fin.innerHTML) <= 2.75) {
+        fin.innerHTML = "3.5";
+      } else if (Number(fin.innerHTML) <= 3.6 && Number(fin.innerHTML) >= 3.5) {
+        fin.innerHTML = "3.78";
       }
     }
   );
@@ -99,9 +110,9 @@ function Cat() {
   //
   // main result
   document.querySelectorAll(".col-sm-3.ng-binding")[0].innerHTML =
-    "<strong>CGPA :</strong> 3.69";
+    "<strong>CGPA :</strong> 3.65";
   document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
-    "<strong>Grade :</strong> A";
+    "<strong>Grade :</strong> A-";
 }
 setInterval(Cat, 500);
 function setFavicons(favImg) {
