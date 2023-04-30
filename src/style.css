@@ -14,6 +14,11 @@ body {
   width: 50%;
   margin: 0 auto;
 }
+.cat__title {
+  font-size: 1.8rem;
+  color: #a3d39c;
+  padding: 2vh 0;
+}
 .cat__logo {
   margin-top: 5vh;
 }
@@ -23,7 +28,11 @@ body {
   font-weight: 500;
 }
 .cat__down {
-  padding: 5px 25px;
+  width: 170px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #a3d39c;
   border: 3px solid #252525;
   font-size: 1rem;
@@ -32,9 +41,24 @@ body {
   text-decoration: none;
   color: #ffe9c8;
 }
+center {
+  padding-top: 20px;
+}
 .cat__hl {
   font-weight: bold;
   color: #ffad8a;
+}
+.cat__download {
+  position: relative;
+  width: 170px;
+}
+#cat__i {
+  position: absolute;
+  width: 50px;
+  top: -15px;
+  right: 0;
+  z-index: -1;
+  transition: all 0.5s;
 }
 .cat__copy {
   margin-top: 28vh;
@@ -45,5 +69,11 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     width: 70%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cat__title {
+    font-size: 3rem;
+    line-height: 0.9;
   }
 }

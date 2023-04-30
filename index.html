@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cat</title>
+    <title>𝘾𝙖𝙩 — 𝘾𝙝𝙧𝙤𝙢𝙚 𝙚𝙭𝙩𝙚𝙣𝙨𝙞𝙤𝙣 𝙗𝙮 𝙞𝙧𝙛𝙖𝙣𝙨𝙝𝙖𝙙𝙞𝙠𝙧𝙞𝙨𝙝𝙖𝙙</title>
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="shortcut icon" href="./images/icon128.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="container">
     <img class="cat__logo" src="./images/icon128.png" alt="" />
-    <h1>Cat</h1>
+    <h1 class="cat__title">Cat — Chrome extension</h1>
     <p class="cat__desc">
       Chrome extension for
       <span class="cat__hl"
@@ -32,11 +39,19 @@
         >dark mode.</span
       >
     </p>
-    <a
-      href="https://github.com/irfanshadikrishad/cat/archive/refs/tags/v1.0.2.zip"
-      class="cat__down"
-      >Download !</a
-    >
+    <center>
+      <div class="cat__download">
+        <img src="./images/cat.png" alt="cat__popup" id="cat__i" />
+        <a
+          id="download"
+          href="https://github.com/irfanshadikrishad/cat/archive/refs/tags/v1.0.3.zip"
+          class="cat__down"
+          onmouseover="mouseover()"
+          onmouseout="mouseout()"
+          >Download
+        </a>
+      </div>
+    </center>
     <p class="cat__desc cat__copy">
       developed by
       <a
@@ -46,5 +61,6 @@
         >Irfan Shadik Rishad</a
       >, [24 April, 2023]
     </p>
+    <script src="./src/script.js"></script>
   </body>
 </html>
