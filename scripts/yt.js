@@ -107,12 +107,68 @@ function Cat() {
       i.src = "https://i.ibb.co/ZN6pbn4/icon128.png";
     }
   });
-  //
+  // programmer ranklist '😏
+  document.querySelectorAll(".ng-binding")[1].innerHTML = "182210012101087";
+  document.querySelectorAll(".ng-binding")[2].innerHTML = "Irfan Shadik Rishad";
+  document.querySelectorAll(".link-to-profile")[0].innerText =
+    "irfanshadikrishad";
+  document.querySelectorAll(".link-to-profile")[1].innerText = "lu_irfan";
+  document.querySelectorAll(".link-to-profile")[0].href =
+    "https://codeforces.com/profile/irfanshadikrishad";
+  document.querySelectorAll(".link-to-profile")[1].href =
+    "https://www.codechef.com/users/lu_irfan";
   // main result
-  document.querySelectorAll(".col-sm-3.ng-binding")[0].innerHTML =
-    "<strong>CGPA :</strong> 3.65";
-  document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
-    "<strong>Grade :</strong> A-";
+  // document.querySelectorAll(".col-sm-3.ng-binding")[0].innerHTML =
+  //   "<strong>CGPA :</strong> 3.65";
+  // document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+  //   "<strong>Grade :</strong> A-";
+  let cgpa = 0;
+  let semester = 0;
+  const absolute = Array.from(document.querySelectorAll("th.ng-binding")).map(
+    (abs) => {
+      if (abs.innerHTML <= 4) {
+        cgpa = cgpa + Number(abs.innerHTML);
+        semester = semester + 1;
+      }
+    }
+  );
+  let avarage_cgpa = cgpa / semester;
+  // absolute cgpa
+  document.querySelectorAll(
+    ".col-sm-3.ng-binding"
+  )[0].innerHTML = `<strong>CGPA :</strong> ${avarage_cgpa}`;
+  // absolute grade
+  if (avarage_cgpa == "0.0") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> F";
+  } else if (avarage_cgpa <= "2.0") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> D";
+  } else if (avarage_cgpa <= "2.25") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> C";
+  } else if (avarage_cgpa <= "2.5") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> C+";
+  } else if (avarage_cgpa <= "2.75") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> B-";
+  } else if (avarage_cgpa <= "3.0") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> B";
+  } else if (avarage_cgpa <= "3.25") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> B+";
+  } else if (avarage_cgpa <= "3.5") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> A-";
+  } else if (avarage_cgpa <= "3.75") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> A";
+  } else if (avarage_cgpa <= "4.0") {
+    document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
+      "<strong>Grade :</strong> A+";
+  }
 }
 setInterval(Cat, 500);
 function setFavicons(favImg) {

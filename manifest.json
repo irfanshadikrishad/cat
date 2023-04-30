@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Cat",
-  "description": "Changes everything in the Leading University, Sylhet. homepage",
-  "version": "1.0",
+  "description": "Enables dark-mode in the Leading University, Sylhet. website. Also increases the CGPA 🐱 in local device.",
+  "version": "1.0.3",
   "icons": {
     "16": "./images/icon16.png",
     "32": "./images/icon32.png",

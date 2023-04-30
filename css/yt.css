@@ -186,8 +186,8 @@ ul.footer-address > li {
   border: 2px solid #252525 !important;
 }
 .single-feature {
-  color: #008572;
-  background-color: #252525;
+  color: #008572 !important;
+  background-color: #252525 !important;
 }
 .col-xl-8 > .box.bg-white.p-3.border {
   background-color: #252525 !important;
