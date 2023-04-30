@@ -34,17 +34,18 @@ function Cat() {
         fin.innerHTML == "C" ||
         fin.innerHTML == "C+"
       ) {
-        fin.innerHTML = "A-";
+        fin.innerHTML = "A";
       } else if (
         fin.innerHTML == "B-" ||
         fin.innerHTML == "B" ||
         fin.innerHTML == "B+"
       ) {
         fin.innerHTML = "A";
-      } else if (Number(fin.innerHTML) <= 2.75) {
-        fin.innerHTML = "3.5";
-      } else if (Number(fin.innerHTML) <= 3.6 && Number(fin.innerHTML) >= 3.5) {
-        fin.innerHTML = "3.78";
+      }
+      if (fin.innerHTML <= 3.0) {
+        fin.innerHTML = "3.51";
+      } else if (fin.innerHTML <= 3.5) {
+        fin.innerHTML = "3.65";
       }
     }
   );
@@ -155,7 +156,7 @@ function Cat() {
       "<strong>Grade :</strong> A+";
   }
 }
-setInterval(Cat, 500);
+setInterval(Cat, 1000);
 function setFavicons(favImg) {
   let headTitle = document.querySelector("head");
   let setFavicon = document.createElement("link");
