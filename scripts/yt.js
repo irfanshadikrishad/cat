@@ -107,21 +107,6 @@ function Cat() {
       i.src = "https://i.ibb.co/ZN6pbn4/icon128.png";
     }
   });
-  // programmer ranklist '😏
-  document.querySelectorAll(".ng-binding")[1].innerHTML = "182210012101087";
-  document.querySelectorAll(".ng-binding")[2].innerHTML = "Irfan Shadik Rishad";
-  document.querySelectorAll(".link-to-profile")[0].innerText =
-    "irfanshadikrishad";
-  document.querySelectorAll(".link-to-profile")[1].innerText = "lu_irfan";
-  document.querySelectorAll(".link-to-profile")[0].href =
-    "https://codeforces.com/profile/irfanshadikrishad";
-  document.querySelectorAll(".link-to-profile")[1].href =
-    "https://www.codechef.com/users/lu_irfan";
-  // main result
-  // document.querySelectorAll(".col-sm-3.ng-binding")[0].innerHTML =
-  //   "<strong>CGPA :</strong> 3.65";
-  // document.querySelectorAll(".col-sm-3.ng-binding")[1].innerHTML =
-  //   "<strong>Grade :</strong> A-";
   let cgpa = 0;
   let semester = 0;
   const absolute = Array.from(document.querySelectorAll("th.ng-binding")).map(
