@@ -25,7 +25,6 @@ function Cat() {
       element.innerHTML = "4.0";
     }
   });
-  console.log("https://irfanshadikrishad.github.io");
   const final = Array.from(document.querySelectorAll("th.ng-binding")).map(
     (fin) => {
       if (
@@ -62,7 +61,6 @@ function Cat() {
   const img = Array.from(
     document.querySelectorAll(".wpb_single_image img")
   ).map((i) => {
-    console.log(i.src);
     if (
       i.src == "https://www.lus.ac.bd/wp-content/uploads/2015/06/1-90x90.png"
     ) {

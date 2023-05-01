@@ -138,6 +138,9 @@ p.text-right.clearfix > a {
 .navbar .menu-item-has-children > a::after {
   color: #008572 !important;
 }
+button.btn.waves-effect.waves-light.pull-right {
+  background-color: #252525 !important;
+}
 /* ------------------------------- */
 /* library page */
 /* ------------------------------- */

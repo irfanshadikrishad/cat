@@ -66,6 +66,10 @@ center {
 .cat__hl > a {
   color: #ffad8a;
 }
+#cat__thanks {
+  color: #1028cf;
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .container {
     width: 70%;
